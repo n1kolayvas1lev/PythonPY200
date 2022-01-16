@@ -1,10 +1,13 @@
 from driver import Driver
 
+
 class DriverTypeError(Exception):
     pass
 
+
 class EngineIsNotRunning(Exception):
     pass
+
 
 class DriverNotFound(Exception):
     pass
@@ -33,7 +36,7 @@ class Car:
         print(f'{cls.__created_car} class {cls.__name__} cars created')
         return super().__new__(cls)
 
-    #Методы класса.
+    # Методы класса.
     @classmethod
     def change_brand(cls, new_brand: str):
         cls.brand = new_brand
@@ -48,8 +51,7 @@ class Car:
     def __append_new_car_counter(cls):
         cls.__created_car += 1
 
-    #Статические методы.
-
+    # Статические методы.
 
     @property
     def driver(self):
@@ -104,10 +106,6 @@ class Car:
 # /Блок работы с защищёнными методами.
 
 
-
-
-
-
 # Эквивалент @property
     # def set_driver(self, driver: Driver):
     #     if not isinstance(driver, Driver):
@@ -116,9 +114,6 @@ class Car:
     #
     # def get_driver(self):
     #     return self.__driver
-
-
-
 
 
 if __name__ == '__main__':
@@ -141,6 +136,6 @@ if __name__ == '__main__':
     # car.set_driver(Driver('Andrew'))
     # car.get_driver()
     # print(car.get_driver())
-#Блок отработки свойств
+# Блок отработки свойств
     # car.driver = Driver('Andrew')
     # print(car.driver)

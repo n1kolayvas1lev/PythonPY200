@@ -15,10 +15,10 @@ class Date:
         self.is_valid_date(self.day, self.month, self.year)
 
     @staticmethod
-    def is_leap_year(self, year: int):
+    def is_leap_year(year: int):
         """Проверяет, является ли год високосным"""
         ...  #
-        if year/400 == 0 or year/4 == 0 and year/100 != 0:
+        if year % 400 == 0 or year % 4 == 0 and year % 100 != 0:
             return True
         else:
             return False
@@ -35,7 +35,6 @@ class Date:
         else:
             return 28
 
-    @staticmethod
     def is_valid_date(self, day: int, month: int, year: int):
         """Проверяет, является ли дата корректной"""
         ...  #
@@ -47,6 +46,5 @@ class Date:
 
 if __name__ == "__main__":
     date = Date(10, 11, 2020)
-    print(date.get_max_day())
+    print(date.is_valid_date(29, 2, 1900))
     # Write your solution here
-    pass

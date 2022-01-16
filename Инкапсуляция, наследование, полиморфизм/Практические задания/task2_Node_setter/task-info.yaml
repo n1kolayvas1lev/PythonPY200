@@ -22,7 +22,7 @@ files:
       offset: 399
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: 'self.next = next_  # вызовется setter'
   - offset: 821
     length: 153
@@ -36,7 +36,7 @@ files:
       offset: 821
     initialized_from_dependency: false
     selected: false
-    status: Unchecked
+    status: Failed
     encrypted_possible_answer: |-
       @property
           def next(self):
@@ -93,5 +93,15 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Incorrect
+  time: Sun, 16 Jan 2022 16:14:26 UTC
+  expected: |
+    Вызван setter
+    Вызван setter
+    Вызван setter
+    Node(1, Node(2)) Node(2, None)
+  actual: |
+    Node(1, Node(2)) Node(2, None)
 record: -1
