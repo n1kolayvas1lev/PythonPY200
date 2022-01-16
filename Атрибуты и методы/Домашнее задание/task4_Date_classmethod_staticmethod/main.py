@@ -39,7 +39,7 @@ class Date:
     def is_valid_date(self, day: int, month: int, year: int):
         """Проверяет, является ли дата корректной"""
         ...  #
-        if day <= self.get_max_day(month, year):
+        if 0 < day <= self.get_max_day(month, year) or 0 > month > 12 or 0 > year:
             return True
         else:
             return False
