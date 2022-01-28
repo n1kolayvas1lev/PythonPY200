@@ -100,7 +100,7 @@ class Parent:
 
 class Child(Parent):
     def __init__(self, underwear: str, second_chromosome: str, amount_of_teeth: int):
-        super().__init__(underwear=underwear,second_chromosome=second_chromosome, amount_of_teeth=amount_of_teeth)
+        super().__init__(underwear=underwear, second_chromosome=second_chromosome, amount_of_teeth=amount_of_teeth)
 
 
 if __name__ == "__main__":

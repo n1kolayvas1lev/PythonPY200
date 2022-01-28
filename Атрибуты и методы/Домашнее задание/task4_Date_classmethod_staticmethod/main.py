@@ -43,8 +43,11 @@ class Date:
         else:
             return False
 
+    def __repr__(self):
+        return f"{self.day}, {self.month}, {self.year}"
+
 
 if __name__ == "__main__":
     date = Date(10, 11, 2020)
-    print(date.is_valid_date(29, 2, 1900))
+    print(date)
     # Write your solution here

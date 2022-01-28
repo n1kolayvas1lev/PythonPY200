@@ -48,11 +48,8 @@ files:
             # todo test set next
             ...
   learner_created: false
-- name: DLL.py
+- name: DLN.py
   visible: true
   learner_created: true
-status: Solved
-feedback:
-  message: Congratulations!
-  time: Wed, 26 Jan 2022 09:50:52 UTC
+status: Unchecked
 record: -1

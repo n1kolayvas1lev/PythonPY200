@@ -10,15 +10,15 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 2649
-    length: 84
+  - offset: 2360
+    length: 89
     placeholder_text: '# TODO определить метод сложения, когда LinkedList находится
       справа от оператора сложения'
     initial_state:
       length: 89
       offset: 2360
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: |-
       def __radd__(self, other: list) -> "LinkedList":
@@ -165,5 +165,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: Wed, 26 Jan 2022 12:27:19 UTC
+  time: Fri, 28 Jan 2022 10:32:12 UTC
 record: -1

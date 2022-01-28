@@ -10,7 +10,7 @@ files:
   visible: true
   placeholders:
   - offset: 2130
-    length: 175
+    length: 172
     placeholder_text: |-
       def __add__(self, other: "LinkedList") -> "LinkedList":  # TODO метод должен уметь складывать list
               if not isinstance(other, LinkedList):
@@ -19,20 +19,20 @@ files:
       length: 172
       offset: 2130
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: |-
       def __add__(self, other: ["LinkedList", list]) -> "LinkedList":
               if not isinstance(other, (LinkedList, list)):
                   raise TypeError
-  - offset: 2439
-    length: 35
+  - offset: 2444
+    length: 44
     placeholder_text: '... # TODO определить метод для оператора +='
     initial_state:
       length: 44
       offset: 2444
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Solved
     encrypted_possible_answer: |-
       if not isinstance(other, (LinkedList, list)):
@@ -177,5 +177,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: Wed, 26 Jan 2022 12:04:49 UTC
+  time: Fri, 28 Jan 2022 10:32:08 UTC
 record: -1

@@ -9,15 +9,15 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 2428
-    length: 60
+  - offset: 2420
+    length: 50
     placeholder_text: '... # TODO реализовать метод клонирования последовательности'
     initial_state:
       length: 60
       offset: 2428
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: |-
       if not isinstance(other, int):
                   raise TypeError
@@ -161,5 +161,14 @@ files:
             self.is_valid(next_)
             self._next = next_
   learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Incorrect
+  time: Fri, 28 Jan 2022 11:04:55 UTC
+  expected: |
+    [1, 2, 3]
+    [1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3]
+  actual: |
+    [1, 2, 3]
+    [1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3]
 record: -1
