@@ -99,9 +99,6 @@ class LinkedList:
         #  реализовать алгоритм вставки элемента
         if not isinstance(index, int):
             raise TypeError()
-
-
-
         new_node = Node(value)
 
         if index == 0:
@@ -118,6 +115,7 @@ class LinkedList:
             self.linked_nodes(prev_node, new_node)
             self.linked_nodes(new_node, next_node)
             self.len += 1
+
 
 if __name__ == '__main__':
     list_ = [1, 2, 3]

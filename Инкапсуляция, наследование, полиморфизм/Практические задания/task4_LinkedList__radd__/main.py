@@ -75,20 +75,33 @@ class LinkedList:
 
         for item in other:
             self.append(item)
-
         return self
 
-    # TODO определить метод сложения, когда LinkedList находится справа от оператора сложения
+    def __iadd__(self, other: ["LinkedList", list]) -> "LinkedList":
+        return self + other
+
+    def __radd__(self, other: list) -> "LinkedList":
+        if not isinstance(other, list):
+            raise TypeError
+        llist = self.to_list()
+        return LinkedList(other + llist)
+
+
+
+# определить метод сложения, когда LinkedList находится справа от оператора сложения
 
 
 if __name__ == "__main__":
     ll = LinkedList()
     print(ll)
+    #print(type(ll))
 
     ll = ll + [1, 2, 3]
     print(ll)
+    #print(type(ll))
 
     ll = [4, 5, 6] + ll
     print(ll)
+    #print(type(ll))
 
 

@@ -17,7 +17,7 @@ class Date:
     @staticmethod
     def is_leap_year(year: int):
         """Проверяет, является ли год високосным"""
-        ...  #
+
         if year % 400 == 0 or year % 4 == 0 and year % 100 != 0:
             return True
         else:
@@ -37,7 +37,7 @@ class Date:
 
     def is_valid_date(self, day: int, month: int, year: int):
         """Проверяет, является ли дата корректной"""
-        ...  #
+
         if 0 < day <= self.get_max_day(month, year) or 0 > month > 12 or 0 > year:
             return True
         else:

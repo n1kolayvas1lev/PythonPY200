@@ -1,6 +1,6 @@
 from typing import Any, Iterable, Optional
 
-from node import Node
+from node import Node, DoubleLinkedNode
 
 
 class LinkedList:
@@ -69,5 +69,39 @@ class LinkedList:
     def __str__(self) -> str:
         return f"{self.to_list()}"
 
+# Реализовать класс DoubleLinkedList
 
-# TODO Реализовать класс DoubleLinkedList
+class DoubleLinkedList(LinkedList):
+    def __init__(self, data: Iterable = None):
+        super().__init__(data=data)
+        self.head: Optional[DoubleLinkedNode] = None
+
+    @staticmethod
+    def linked_nodes(left_node: Optional[DoubleLinkedNode] = None,
+                     right_node: Optional[DoubleLinkedNode] = None) -> None:
+        """
+        Функция, которая связывает между собой два узла.
+
+        :param left_node: Левый или предыдущий узел
+        :param right_node: Правый или следующий узел
+        """
+        left_node.next = right_node
+        right_node.prev = left_node
+
+if __name__ == "__main__":
+    ll = LinkedList()
+    dll = DoubleLinkedList()
+    print(ll)
+    print(dll)
+    print(type(ll))
+    print(type(dll))
+
+    ll = LinkedList([1, 2, 3])
+    dll = DoubleLinkedList([3, 4, 5])
+    print(ll)
+    print(type(ll[1]))
+    print(type(dll[1]))
+    print(type(ll))
+    print(type(dll))
+
+

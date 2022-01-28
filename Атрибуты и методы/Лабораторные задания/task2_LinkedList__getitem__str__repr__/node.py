@@ -28,3 +28,15 @@ class Node:
     def set_next(self, next_: Optional["Node"] = None) -> None:
         self.is_valid(next_)
         self.next = next_
+
+if __name__ == "__main__":
+    node1 = Node(1)
+    node2 = Node(2)
+    node3 = Node(3)
+    # node2.prev(node1)
+    # node3.prev(node2)
+    # node1.next(node2)
+    # node2.next(node3)
+    print(repr(node1))
+    print(repr(node2))
+    print(repr(node3))
