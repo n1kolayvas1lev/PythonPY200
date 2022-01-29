@@ -270,36 +270,3 @@ if __name__ == '__main__':
     car.start_engine = "Заведись"
     car.move()
 
-    # print(car.brand)
-    # print(car_2.brand)
-    # Car.change_brand("Nissan")
-    # print(car.brand)
-    # print(car_2.brand)
-    #
-    # print(car._max_speed)
-    # print(car_2._max_speed)
-    # Car._change_max_speed(190)
-    # print(car._max_speed)
-    # print(car_2._max_speed)
-
-    # Блок работы с защищёнными методами
-    # print(car._mileage)
-    # car._mileage = '10'
-    # print(car._mileage)
-    # /Блок работы с защищёнными методами
-
-    # Блок отработки движения машины
-    # car.start_engine()
-    # car.driver = Driver("Иван")
-
-    # car.move()
-    # car.move()
-    # /Блок отработки движения машины
-
-    # Блок отработки свойств
-    # car.driver = Driver('Андрей')
-    # print(car.driver)
-    # Эквивалент свойствам (property)
-    # car.set_driver(Driver('Андрей'))
-    # car.get_driver()
-    # /Блок отработки свойств

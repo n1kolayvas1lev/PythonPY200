@@ -59,12 +59,12 @@ class GTA(Driver):
 if __name__ == '__main__':
     experience = Experience((0, 5), (5, 10), (10, 60), 5)
 
-    ivan = Driver('Ivan', experience)
+
     alex = Driver('Alex', experience)
     uter = Mech('WAAAAAAGH!!!')
     vercetti = GTA('Tommy Vercetti', experience)
 
-    print(ivan)
+
     print(alex)
     print(uter)
     print(vercetti)
